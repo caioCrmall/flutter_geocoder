@@ -25,7 +25,7 @@ class AppState extends InheritedWidget {
   final Geocoding mode;
 
   static AppState of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(AppState);
+    return context.dependOnInheritedWidgetOfExactType<AppState>();
   }
 
   @override
